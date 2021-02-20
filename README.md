@@ -1,0 +1,1 @@
+# Config store for spring-micro-websocket-chat application
