@@ -24,6 +24,9 @@ zuul:
     auth-service:
       path: /auth-service/**
       serviceId: auth
+    chat-service:
+      path: /chat-service/**
+      serviceId: chat  
 
 logging:
   level:
