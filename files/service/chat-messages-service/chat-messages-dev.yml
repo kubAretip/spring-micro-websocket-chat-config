@@ -1,0 +1,8 @@
+server:
+  port: 9999
+
+logging:
+  level:
+    pl:
+      kubaretip:
+        chatmessagesservice: debug
