@@ -5,19 +5,16 @@ spring:
         locator:
           enabled: true
 server:
-  address: 127.0.0.1
   port: 8080
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
     prefer-ip-address: false
-    ip-address: 127.0.0.1
-    hostname: localhost
   client:
     healthcheck:
       enabled: true
     serviceUrl:
-      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka
+      defaultZone: http://eureka-server:8761/eureka
     register-with-eureka: false
     fetch-registry: true
     enabled: true
