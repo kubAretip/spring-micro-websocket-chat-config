@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: rabbitmq-service
+    username: rabbitmq-user
+    password: '{cipher}b8964ed2cc2c7fee4583669ba46f7a1c541a0fd8a56bf50f451eeee39c8d34770715712306cac3b7046426c4d75ce042'
+websocket:
+  rabbitmq:
+    stomp:
+      clientLogin: rabbitmq-user
+      clientPasscode: '{cipher}538a13c1eb4f9c9ca3226eb3a12113357e2214398da4863580fa17cf4b73fd66ee784b84d695f48fb8eebfed8dfdcc60'
+      systemLogin: rabbitmq-user
+      systemPasscode: '{cipher}d26f57a1f78d64354a73bfe8775acc4e754f0ffc48ad25eceebc821bedae00cfc31b5e82ab6f13003cf7c94f0df42e45'
+      relayPort: 61613
+      relayHost: rabbitmq-service

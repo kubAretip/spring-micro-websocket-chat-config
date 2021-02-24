@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      host: chat-messages-service-mongo
+      port: 27017
+      database: chat_messages_service_database
+      username: chat-messages-service-user
+      password: '{cipher}5e87c97e4945dc86614e5f7850392680fcd787edd9d4d106438f2ac9879e7358186a9fcc4172771ccae4a1fbf4f6d9d6'
+  rabbitmq:
+    host: rabbitmq-service
+    port: 5672
+    username: rabbitmq-user
+    password: '{cipher}00c143e772cb49e03cef267ec4da54871c921726ab7a7b07b556048c36547d22a4444b36b4af4e66a07bb563eda5d44c'
+
+logging:
+  level:
+    pl:
+      kubaretip:
+        chatmessagesservice: debug

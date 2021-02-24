@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://auth-service-mysql:3306/auth_service_database?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: auth-service-user
+    password: '{cipher}e5ea373656b09cb959f93338c5be9fc143ee36d5940ac51e62a724da975bfc864779abc0467de644334060213569fd02'
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  rabbitmq:
+    host: rabbitmq-service
+    port: 5672
+    username: rabbitmq-user
+    password: '{cipher}00c143e772cb49e03cef267ec4da54871c921726ab7a7b07b556048c36547d22a4444b36b4af4e66a07bb563eda5d44c'
+logging:
+  level:
+    pl:
+      kubaretip:
+        authservice: debug
+
+server:
+  forward-headers-strategy: framework
