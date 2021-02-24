@@ -7,10 +7,10 @@ spring:
     hibernate:
       ddl-auto: validate
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq-service
     port: 5672
     username: rabbitmq-user
-    password: '{cipher}3adfb46bde0f96695af1853733d8774f0012b158e34b64a1254660f509c65e1b666020c71b435e7a78a36d31c2845cbf'
+    password: '{cipher}00c143e772cb49e03cef267ec4da54871c921726ab7a7b07b556048c36547d22a4444b36b4af4e66a07bb563eda5d44c'
 logging:
   level:
     pl:
