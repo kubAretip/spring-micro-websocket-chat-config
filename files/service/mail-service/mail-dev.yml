@@ -17,4 +17,5 @@ spring:
 server:
   port: 9998
 mail:
-  baseUrl: http://localhost:8762/api
+  links:
+    baseUrl: http://localhost:4200
