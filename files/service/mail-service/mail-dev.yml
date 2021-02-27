@@ -19,3 +19,4 @@ server:
 mail:
   links:
     baseUrl: http://localhost:4200
+    activation-resource-path: /login?data=
